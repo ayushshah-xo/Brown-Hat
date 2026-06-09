@@ -1,0 +1,21 @@
+# Secret API keys — NEVER commit this
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs and TTS audio cache
+logs/
+*.log
+
+# Downloaded AI models (too large for GitHub)
+models/llm/
+models/vosk/vosk-model-*/
+models/piper/*.onnx
+models/piper/*.onnx.json
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,33 @@
+# ================================================================
+#  SUKUNA SCHOOL ROBOT — Python Requirements
+#  Install with:  pip install -r requirements.txt
+#  Tested on Raspberry Pi 4 (Python 3.9+)
+# ================================================================
+
+# ── Core ─────────────────────────────────────────────────────
+python-dotenv==1.0.1          # reads .env file for API keys
+
+# ── AI / LLM ─────────────────────────────────────────────────
+openai==1.30.1                # works with both OpenAI AND Groq (same SDK)
+
+# ── Speech-to-Text ───────────────────────────────────────────
+sounddevice==0.4.6            # microphone input
+numpy==1.26.4                 # audio processing
+httpx==0.27.0                 # HTTP client for Deepgram API
+
+# Vosk (offline STT — only needed if STT_ENGINE=vosk)
+# vosk==0.3.45
+
+# ── Text-to-Speech ────────────────────────────────────────────
+gTTS==2.5.1                   # Google TTS — free, great Nepali/Hindi
+pygame==2.5.2                 # audio playback
+
+# ElevenLabs (premium — only needed if TTS_ENGINE=elevenlabs)
+# elevenlabs==1.2.2
+
+# ── Servo Control ─────────────────────────────────────────────
+adafruit-circuitpython-servokit==1.3.16  # PCA9685 servo driver
+adafruit-blinka==8.40.0                  # CircuitPython on Pi
+
+# ── Offline LLM (only needed if AI_MODE=offline) ─────────────
+# llama-cpp-python==0.2.56
