@@ -1,250 +1,379 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Mono&size=13&duration=2500&pause=800&color=6EE7B7&center=true&vCenter=true&width=600&lines=Raspberry+Pi+4+%C2%B7+Servo+Motors+%C2%B7+Python;Wake-Word+Activation+%C2%B7+Multilingual+AI;Offline+%2B+Online+AI+%C2%B7+Groq+%2B+Ollama;Real-time+Facial+Expressions+%C2%B7+Natural+TTS" alt="Stack ticker" />
-
-<br/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Mono&size=13&duration=2500&pause=800&color=6EE7B7&center=true&vCenter=true&width=700&lines=Raspberry+Pi+4+%C2%B7+Servo+Motors+%C2%B7+Python;Wake-Word+Activation+%C2%B7+Multilingual+AI;Offline+%2B+Online+AI+%C2%B7+Groq+%2B+Ollama;Natural+Speech+Synthesis+%C2%B7+Real-time+Facial+Expressions" />
 
 # 🤖 Brown Hat
 
-**An open-source AI-powered humanoid robot with wake-word activation, multilingual conversation, offline/online AI, natural speech synthesis, and real-time servo-driven facial expressions — built on Raspberry Pi 4.**
+### Open-Source AI Humanoid Robot Built on Raspberry Pi
 
-<br/>
+An AI-powered robotic head featuring wake-word activation, multilingual conversation, online/offline AI processing, natural speech synthesis, internet-assisted responses, and real-time servo-driven facial expressions.
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-4-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white)](https://raspberrypi.org)
+Designed, printed, assembled, and programmed entirely from scratch.
+
+<br>
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square\&logo=python\&logoColor=white)](https://python.org)
+[![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-4-C51A4A?style=flat-square\&logo=raspberry-pi\&logoColor=white)](https://raspberrypi.org)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/ayushshah-xo/Brown-Hat?style=flat-square&color=facc15)](https://github.com/ayushshah-xo/Brown-Hat/stargazers)
-[![YouTube](https://img.shields.io/badge/YouTube-Demo-FF0000?style=flat-square&logo=youtube&logoColor=white)]([https://www.youtube.com/@YOUR_CHANNEL](https://youtu.be/T0bWZ5AiFkI?si=L2nQYKOcLLc1IqRG))
+[![GitHub Stars](https://img.shields.io/github/stars/ayushshah-xo/Brown-Hat?style=flat-square\&color=facc15)](https://github.com/ayushshah-xo/Brown-Hat/stargazers)
 
 </div>
+
+---
+
+## 🎥 Watch Brown Hat in Action
+
+<p align="center">
+  <a href="https://youtu.be/T0bWZ5AiFkI">
+    <img src="https://img.youtube.com/vi/T0bWZ5AiFkI/maxresdefault.jpg" alt="Brown Hat Demo">
+  </a>
+</p>
+
+<p align="center">
+  <b>▶ Click the image to watch the full demonstration</b>
+</p>
 
 ---
 
 ## 📖 Table of Contents
 
-- [What is Brown Hat?](#-what-is-brown-hat)
-- [Demo](#-demo)
-- [Features](#-features)
-- [How It Works](#-how-it-works)
-- [Hardware](#-hardware)
-- [Repository Structure](#-repository-structure)
-- [Getting Started](#-getting-started)
-- [Libraries](#-libraries)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
+* Overview
+* Features
+* Why Brown Hat?
+* System Architecture
+* Hardware
+* Repository Structure
+* Getting Started
+* CAD & STL Files
+* Roadmap
+* Contributing
+* Author
 
 ---
 
-## 🧠 What is Brown Hat?
+# 🧠 Overview
 
-Brown Hat is a fully functional AI-powered robotic head built from scratch — mechanical design, embedded hardware, and AI software — by a student. It wakes up when you call its name, holds a conversation in multiple languages, speaks back with a natural voice, and animates its face in real time.
+Brown Hat is an open-source humanoid robot platform powered by Raspberry Pi 4.
 
-No cloud subscriptions required. No black-box kits. Every part designed, printed, and coded by hand.
+The project combines artificial intelligence, speech recognition, speech synthesis, and servo-driven facial animation into a single robotic system capable of natural human interaction.
 
-<br/>
+Brown Hat listens for a wake word, understands spoken language, generates responses using online or offline language models, speaks naturally, and expresses itself through synchronized facial movements.
 
-<div align="center">
+The goal is simple:
 
-| <img src="assets/images/robot-main.jpeg" width="240" alt="Brown Hat front view" /> | <img src="assets/images/cad-design.png" width="240" alt="CAD design" /> | <img src="assets/images/diagram.png" width="240" alt="System diagram" /> |
-|:---:|:---:|:---:|
-| **Built Robot** | **CAD Design** | **System Flow** |
+> Build a fully reproducible AI robot that anyone can assemble, improve, and learn from.
 
-</div>
+Unlike many robotics kits, Brown Hat was designed from the ground up—including hardware design, electronics integration, software architecture, and mechanical assembly.
 
 ---
 
-## 🎥 Demo
+# ✨ Features
 
-<!-- GitHub video embed -->
-https://github.com/user-attachments/assets/923eefe1-8b44-4f8e-96d7-886b42254e04
-
-> Servo-driven facial expressions running in real time — eyes, eyebrows, and mouth animated independently.
-
-📺 **Full walkthrough on YouTube:** [Watch here](https://www.youtube.com/@YOUR_CHANNEL)
-
----
-
-## ✨ Features
-
-| | |
-|---|---|
-| 🎤 **Wake-Word Activation** | Brown Hat wakes up and listens only when called — no constant mic polling |
-| 🌍 **Multilingual Conversation** | Understands and responds in multiple languages |
-| 🧠 **Online AI (Groq)** | Fast cloud-based responses via Groq API running Llama 3 |
-| 🔌 **Offline AI (Ollama)** | Falls back to a local TinyLlama model when there's no internet |
-| 🗣️ **Natural Speech Synthesis** | Text-to-speech via espeak with expressive output |
-| 😐 **Facial Expressions** | Servo-driven eyes, eyebrows, and mouth synced to speech |
-| 🎵 **Songs** | Can play and perform songs on command |
-| ⚡ **Real-time Pipeline** | Low-latency speech-to-response with non-blocking servo animation |
-| 🖨️ **3D Printed** | Every structural part is printable and fully remixable |
+| Feature                       | Description                                      |
+| ----------------------------- | ------------------------------------------------ |
+| 🎤 Wake Word Detection        | Activates only when called                       |
+| 🌍 Multilingual Conversations | Understands and responds in multiple languages   |
+| 🧠 Online AI                  | Fast responses powered by Groq                   |
+| 🔌 Offline AI                 | Local fallback using Ollama                      |
+| 🗣️ Natural Speech Synthesis  | Converts AI responses into speech                |
+| 😐 Facial Expressions         | Real-time servo-driven facial animation          |
+| 👀 Autonomous Eye Blinking    | Natural eye movement behavior                    |
+| 👄 Jaw Synchronization        | Mouth movement synchronized with speech          |
+| 🎭 Expression Engine          | Independent control of eyes, eyebrows, and mouth |
+| 🌐 Internet Search            | Retrieves information from the web               |
+| ⚡ Low-Latency Pipeline        | Fast end-to-end response generation              |
+| 🖨️ Open Source               | Fully reproducible and modifiable                |
 
 ---
 
-## ⚙️ How It Works
+# 🚀 Why Brown Hat?
 
+Most AI assistants exist only as software.
+
+Brown Hat brings artificial intelligence into the physical world.
+
+The project demonstrates how modern language models can be integrated into a robotic platform capable of:
+
+* Listening
+* Understanding
+* Speaking
+* Expressing emotions
+* Operating online or offline
+* Interacting naturally with humans
+
+Brown Hat is intended to serve as a learning platform for makers, students, robotics enthusiasts, and AI developers.
+
+---
+
+# ⚙️ System Architecture
+
+```text
+User Speaks
+      │
+      ▼
+Wake Word Detection
+      │
+      ▼
+Speech Recognition
+      │
+      ▼
+Language Detection
+      │
+      ▼
+AI Processing Layer
+ ├── Groq (Online)
+ └── Ollama (Offline)
+      │
+      ▼
+Response Generation
+      │
+      ▼
+Text-To-Speech
+      │
+      ▼
+Audio Playback
+      │
+      ├────────────► Jaw Movement
+      ├────────────► Eye Blinking
+      └────────────► Facial Expressions
 ```
-You say the wake word
-        ↓
-Wake-Word Detection  ──────  listens passively via mic
-        ↓
-Speech Recognition  ───────  converts your voice to text
-        ↓
-Language Detection  ───────  identifies input language
-        ↓
-AI Brain (brain/)
-   ├── Online?  →  Groq API (Llama 3)
-   └── Offline? →  Ollama (TinyLlama, runs on Pi)
-        ↓
-Text-to-Speech (voice/)  ──  synthesizes the response
-        ↓
-Speaker output  +  Servo animation (motion/)  ←  run in parallel
-```
 
-The servo controller runs in a separate thread so facial animation stays perfectly in sync with audio playback without blocking the AI pipeline.
+The facial animation system runs independently from the conversational pipeline, ensuring smooth and responsive expressions while audio is being played.
 
 ---
 
-## 🔧 Hardware
+# 🔧 Hardware
 
-| Component | Details |
-|---|---|
-| **Raspberry Pi 4** | Main compute unit |
-| **Servo motors ×3** | Eyes, eyebrows, mouth actuation |
-| **PCA9685 servo driver** | PWM control over I²C |
-| **USB microphone** | Speech input |
-| **Speaker + amplifier** | Audio output |
-| **5V regulated supply** | Motor power rail |
-| **3D printed chassis** | Full structural frame (PLA recommended) |
+| Component            | Purpose                 |
+| -------------------- | ----------------------- |
+| Raspberry Pi 4       | Main compute unit       |
+| PCA9685 Servo Driver | PWM servo control       |
+| Servo Motors         | Facial actuation        |
+| USB Microphone       | Voice input             |
+| Speaker              | Voice output            |
+| Audio Amplifier      | Audio amplification     |
+| 5V Power Supply      | Stable power delivery   |
+| 3D Printed Structure | Robot frame and housing |
 
 ---
 
-## 📁 Repository Structure
+# 📁 Repository Structure
 
-```
+```text
 Brown-Hat/
-├── brain/          # AI logic — Groq (online) & Ollama (offline) integration
-├── knowledge/      # Knowledge base, facts, and memory for the robot
-├── motion/         # Servo control — facial expressions and animations
-├── songs/          # Song playback and performance routines
-├── tests/          # Unit and integration test scripts
-├── voice/          # Speech recognition (input) and TTS (output)
-├── robot.py        # 🚀 Main entry point — run this to start Brown Hat
-├── config.py       # Hardware pins, AI model settings, language config
-├── read.py         # Utility: read and parse knowledge/config files
+│
+├── brain/          # AI logic
+├── knowledge/      # Knowledge and configuration
+├── motion/         # Servo control and expressions
+├── songs/          # Song playback modules
+├── tests/          # Testing scripts
+├── voice/          # Speech recognition and TTS
+│
+├── robot.py        # Main entry point
+├── config.py       # Configuration
+├── read.py         # Utility scripts
 ├── requirements.txt
 └── .gitignore
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
-**Requirements:** Python 3.9+, Raspberry Pi OS 64-bit
-
-### 1. Clone the repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ayushshah-xo/Brown-Hat.git
+
 cd Brown-Hat
 ```
 
-### 2. Install Python dependencies
+---
+
+## 2. Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Install system packages
+---
+
+## 3. Install System Packages
 
 ```bash
+sudo apt update
+
 sudo apt install espeak python3-pyaudio portaudio19-dev alsa-utils
 ```
 
-### 4. Set up offline AI (optional but recommended)
+---
+
+## 4. Optional Offline AI Setup
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
+
 ollama pull tinyllama
 ```
 
-> Brown Hat automatically switches between Groq (online) and Ollama (offline) — no manual intervention needed.
+Brown Hat automatically switches between online and offline AI modes depending on connectivity.
 
-### 5. Configure
+---
 
-Open `config.py` and set your GPIO pins, Groq API key, and language preferences.
+## 5. Configure
+
+Open:
 
 ```python
-# config.py — key settings
-GROQ_API_KEY = "your_api_key_here"   # Get from console.groq.com
-WAKE_WORD    = "brown hat"
-LANGUAGE     = "en"                  # Change for multilingual mode
-PAN_PIN      = 18                    # Servo GPIO pins
-TILT_PIN     = 19
+config.py
 ```
 
-> ⚠️ Never commit your API key. Add `config.py` to `.gitignore` or use environment variables.
+Example:
 
-### 6. Run Brown Hat
+```python
+GROQ_API_KEY = "YOUR_API_KEY"
+
+WAKE_WORD = "brown hat"
+
+LANGUAGE = "en"
+```
+
+---
+
+## 6. Launch Brown Hat
 
 ```bash
 python3 robot.py
 ```
 
-Say the wake word and start talking!
+Say the wake word and begin interacting.
 
 ---
 
-## 📦 Libraries
+# 🖨️ CAD & STL Files
 
-**Python packages** — installed via pip:
+The software repository contains only the source code.
 
-| Package | Purpose |
-|---|---|
-| `adafruit-circuitpython-servokit` | PCA9685 servo driver control |
-| `groq` | Online AI via Groq (Llama 3) |
-| `SpeechRecognition` | Converts microphone audio to text |
-| `pyaudio` | Raw audio stream for the mic |
-| `requests` | HTTP calls to Groq and Ollama |
-| `pyyaml` | Reads config and knowledge files |
+Hardware files are maintained separately.
 
-```bash
-pip install -r requirements.txt
+## CAD Files
+
+```text
+PASTE YOUR CAD REPOSITORY LINK HERE
 ```
 
-**System packages** — installed via apt:
+## STL Files
 
-| Package | Purpose |
-|---|---|
-| `espeak` | Offline text-to-speech engine |
-| `python3-pyaudio` | PyAudio system binding |
-| `portaudio19-dev` | Audio I/O backend |
-| `alsa-utils` | Audio device control (`aplay`, `alsamixer`) |
+```text
+PASTE YOUR STL REPOSITORY LINK HERE
+```
 
----
-
-## 🤝 Contributing
-
-Issues, pull requests, and forks are welcome.
-
-If you improve a module or add a new feature, open a PR — this project is designed to be remixed.
-
-1. Fork the repo
-2. Create your branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "Add your feature"`
-4. Push and open a PR: `git push origin feature/your-feature`
+These repositories contain the printable and editable files required to build your own Brown Hat robot.
 
 ---
 
-## 👤 Author
+# 📦 Core Technologies
 
-**Ayush Shah**
-[![GitHub](https://img.shields.io/badge/GitHub-ayushshah--xo-181717?style=flat-square&logo=github)](https://github.com/ayushshah-xo)
-[![YouTube](https://img.shields.io/badge/YouTube-Demo-FF0000?style=flat-square&logo=youtube)]([https://www.youtube.com/@YOUR_CHANNEL](https://youtu.be/T0bWZ5AiFkI?si=L2nQYKOcLLc1IqRG))
+### Software
+
+* Python
+* Groq API
+* Ollama
+* SpeechRecognition
+* PyAudio
+* Requests
+* eSpeak
+* PCA9685 Servo Control
+
+### Hardware
+
+* Raspberry Pi 4
+* Servo Motors
+* PCA9685 Driver Board
+* USB Microphone
+* Speaker System
+* 3D Printed Components
+
+---
+
+# 🛣️ Roadmap
+
+## Current Capabilities
+
+* Wake word activation
+* Speech recognition
+* Online AI responses
+* Offline AI fallback
+* Multilingual support
+* Facial expressions
+* Eye blinking
+* Jaw synchronization
+* Internet search
+
+## Future Goals
+
+* Long-term memory
+* Camera integration
+* Computer vision
+* Face recognition
+* Emotion recognition
+* Mobile application
+* Additional facial degrees of freedom
+* Expanded personality system
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Whether you're interested in:
+
+* Robotics
+* Artificial Intelligence
+* Embedded Systems
+* Mechanical Design
+* 3D Printing
+* Raspberry Pi Development
+
+there is room to contribute.
+
+### Contribution Process
+
+1. Fork the repository
+2. Create a new branch
+3. Implement your changes
+4. Commit your work
+5. Open a pull request
+
+All contributions are appreciated.
+
+---
+
+# 👤 Author
+
+## Ayush Shah
+
+Student • Robotics Builder • Open-Source Developer
+
+### GitHub
+
+https://github.com/ayushshah-xo
+
+### Project Repository
+
+https://github.com/ayushshah-xo/Brown-Hat
+
+### Demo Video
+
+https://youtu.be/T0bWZ5AiFkI
 
 ---
 
 <div align="center">
 
-If this project helped or inspired you — a ⭐ goes a long way.
+### ⭐ If Brown Hat inspired you, consider starring the repository.
+
+Building open-source robotics, one servo at a time.
 
 </div>
