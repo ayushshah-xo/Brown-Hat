@@ -362,7 +362,7 @@ https://github.com/ayushshah-xo
 
 ### Project Repository
 
-https://github.com/ayushshah-xo/Brown-Hat
+[https://github.com/ayushshah-xo/Robotic_Head.git]
 
 ### Demo Video
 
