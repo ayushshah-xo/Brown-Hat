@@ -64,7 +64,7 @@ VOSK_MODELS = {                           # only used when STT_ENGINE="vosk"
 #   "gtts"       → Google TTS, free, good Nepali/Hindi
 #   "piper"      → offline neural TTS
 TTS_ENGINE = os.getenv("TTS_ENGINE", "gtts")
-ELEVENLABS_API_KEY  = os.getenv("ELEVENLABS_API_KEY", "sk_23d4f71c16ddd30523d5d931eb7e3a5e317b170fbba8c27b")
+ELEVENLABS_API_KEY  = os.getenv("ELEVENLABS_API_KEY", "your api key")
 ELEVENLABS_VOICE_ID = "VR6AewLTigWG4xSOukaG"  # Arnold - strong male
 """ELEVENLABS_VOICE_ID = "pqHfZKP75CvOlQylNhV4"""
 
