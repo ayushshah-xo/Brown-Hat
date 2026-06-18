@@ -14,7 +14,7 @@
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-4-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white)](https://raspberrypi.org)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/ayushshah-xo/Brown-Hat?style=flat-square&color=facc15)](https://github.com/ayushshah-xo/Brown-Hat/stargazers)
-[![YouTube](https://img.shields.io/badge/YouTube-Demo-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@YOUR_CHANNEL)
+[![YouTube](https://img.shields.io/badge/YouTube-Demo-FF0000?style=flat-square&logo=youtube&logoColor=white)]([https://www.youtube.com/@YOUR_CHANNEL](https://youtu.be/T0bWZ5AiFkI?si=L2nQYKOcLLc1IqRG))
 
 </div>
 
@@ -222,16 +222,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🗺️ Roadmap
-
-- [ ] Face recognition — recognize and greet known people
-- [ ] Emotion AI — adapt facial expressions to conversation tone
-- [ ] Mobile app — wireless control and live monitoring
-- [ ] Locomotion — basic neck and body movement
-- [ ] Memory — remember past conversations across sessions
-
----
-
 ## 🤝 Contributing
 
 Issues, pull requests, and forks are welcome.
@@ -249,7 +239,7 @@ If you improve a module or add a new feature, open a PR — this project is desi
 
 **Ayush Shah**
 [![GitHub](https://img.shields.io/badge/GitHub-ayushshah--xo-181717?style=flat-square&logo=github)](https://github.com/ayushshah-xo)
-[![YouTube](https://img.shields.io/badge/YouTube-Demo-FF0000?style=flat-square&logo=youtube)](https://www.youtube.com/@YOUR_CHANNEL)
+[![YouTube](https://img.shields.io/badge/YouTube-Demo-FF0000?style=flat-square&logo=youtube)]([https://www.youtube.com/@YOUR_CHANNEL](https://youtu.be/T0bWZ5AiFkI?si=L2nQYKOcLLc1IqRG))
 
 ---
 
