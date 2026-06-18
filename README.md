@@ -21,6 +21,17 @@ Designed, printed, assembled, and programmed entirely from scratch.
 
 ---
 
+<br/>
+
+<div align="center">
+
+| <img src="assets/images/robot-main.jpeg" width="240" alt="Robot front view" /> | <img src="assets/images/cad-design.png" width="240" alt="CAD design" /> | <img src="assets/images/diagram.png" width="240" alt="System diagram" /> |
+|:---:|:---:|:---:|
+| **Built Robot** | **CAD Design** | **System Flow** |
+
+</div>
+
+
 ## 🎥 Watch Brown Hat in Action
 
 <p align="center">
@@ -362,7 +373,7 @@ https://github.com/ayushshah-xo
 
 ### Project Repository
 
-[https://github.com/ayushshah-xo/Robotic_Head.git]
+https://github.com/ayushshah-xo/Robotic_Head.git
 
 ### Demo Video
 
