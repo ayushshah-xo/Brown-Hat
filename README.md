@@ -337,7 +337,7 @@ DEFAULT_LANGUAGE = "en"   # "ne", "hi", or "en"
 
 ## 👥 Team
 
-Built with ❤️ at Sukuna Secondary School, Biratnagar, Nepal.
+Sukuna Secondary School, Nepal.
 
 | Name | Role |
 |---|---|
@@ -358,8 +358,3 @@ Please credit **Sukuna Secondary School, Nepal** when sharing. 🙏
 
 ---
 
-<div align="center">
-
-Made with ❤️ in Nepal 🇳🇵 · Sukuna Secondary School, Biratnagar
-
-</div>
