@@ -49,7 +49,7 @@ Built from scratch by a 16-year-old student as an affordable alternative to comm
 
 <p align="center">
   <a href="https://youtu.be/T0bWZ5AiFkI">
-    <img src="assets/images/thumbnail.jpg" alt="Brown Hat Demo" width="900">
+    <img src="assets/images/thumbnail.png" alt="Brown Hat Demo" width="900">
   </a>
 </p>
 
