@@ -362,8 +362,8 @@ Sukuna Secondary School, Nepal.
 | Name | Role |
 |---|---|
 | **Ayush Shah** | Lead developer — hardware, software, and AI integration |
-| **Yuganshu Rizal** | Team member |
-| **Suprim Ojha** | Team member |
+| **Yuganshu Rizal** | Hardware Engineer |
+| **Suprim Ojha** | Developer |
 
 > Ayush Shah built this project at age 16 while studying in Class 11.
 
