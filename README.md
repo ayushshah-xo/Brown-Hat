@@ -40,7 +40,7 @@ Brownhat is a student-built, open-source humanoid AI robot designed for Sukuna S
 
 Built from scratch by a 16-year-old student as an affordable alternative to commercial educational robots, Brownhat runs on a Raspberry Pi 4 and falls back to **fully offline AI** when internet is unavailable.
 
-> 📺 *Add a demo video or GIF here — link your YouTube video!*
+> [📺 *Add a demo video or GIF here — link your YouTube video!*](https://youtu.be/T0bWZ5AiFkI?si=LsZRdmURt1ZFJonD)
 
 ---
 
