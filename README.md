@@ -1,390 +1,365 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Mono&size=13&duration=2500&pause=800&color=6EE7B7&center=true&vCenter=true&width=700&lines=Raspberry+Pi+4+%C2%B7+Servo+Motors+%C2%B7+Python;Wake-Word+Activation+%C2%B7+Multilingual+AI;Offline+%2B+Online+AI+%C2%B7+Groq+%2B+Ollama;Natural+Speech+Synthesis+%C2%B7+Real-time+Facial+Expressions" />
+# 🤖 Brownhat
 
-# 🤖 Brown Hat
+**Open-source AI voice robot for Sukuna Secondary School, Nepal**
 
-### Open-Source AI Humanoid Robot Built on Raspberry Pi
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Platform: Raspberry Pi 4](https://img.shields.io/badge/Platform-Raspberry%20Pi%204-C51A4A.svg)](https://www.raspberrypi.org/)
+[![Languages](https://img.shields.io/badge/Languages-Nepali%20%7C%20Hindi%20%7C%20English-brightgreen.svg)]()
+[![Made in Nepal](https://img.shields.io/badge/Made%20in-Nepal%20🇳🇵-blue.svg)]()
 
-An AI-powered robotic head featuring wake-word activation, multilingual conversation, online/offline AI processing, natural speech synthesis, internet-assisted responses, and real-time servo-driven facial expressions.
+Brownhat speaks Nepali, Hindi, and English · Moves its jaw while talking · Auto-blinks eyebrows · Answers questions about the school, teachers, and the world using AI
 
-Designed, printed, assembled, and programmed entirely from scratch.
-
-<br>
-
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square\&logo=python\&logoColor=white)](https://python.org)
-[![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-4-C51A4A?style=flat-square\&logo=raspberry-pi\&logoColor=white)](https://raspberrypi.org)
-[![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/ayushshah-xo/Brown-Hat?style=flat-square\&color=facc15)](https://github.com/ayushshah-xo/Brown-Hat/stargazers)
+[Features](#-features) · [Hardware](#-hardware) · [Quick Start](#-quick-start) · [Voice Commands](#-voice-commands) · [Configuration](#-configuration) · [Team](#-team)
 
 </div>
-
----
-
-<br/>
-
-<div align="center">
-
-| <img src="assets/images/robot-main.jpeg" width="240" alt="Robot front view" /> | <img src="assets/images/cad-design.png" width="240" alt="CAD design" /> | <img src="assets/images/diagram.png" width="240" alt="System diagram" /> |
-|:---:|:---:|:---:|
-| **Built Robot** | **CAD Design** | **System Flow** |
-
-</div>
-
-
-## 🎥 Watch Brown Hat in Action
-
-<p align="center">
-  <a href="https://youtu.be/T0bWZ5AiFkI">
-    <img src="assets/images/thumbnail.png" alt="Brown Hat Demo" width="900">
-  </a>
-</p>
-
-<p align="center">
-  <b>▶ Click the image to watch the full demonstration</b>
-</p>
 
 ---
 
 ## 📖 Table of Contents
 
-* Overview
-* Features
-* Why Brown Hat?
-* System Architecture
-* Hardware
-* Repository Structure
-* Getting Started
-* CAD & STL Files
-* Roadmap
-* Contributing
-* Author
+- [About](#-about)
+- [Features](#-features)
+- [Hardware](#-hardware)
+- [Software Architecture](#-software-architecture)
+- [Quick Start](#-quick-start)
+- [Voice Commands](#-voice-commands)
+- [Configuration](#-configuration)
+- [Adapting for Your School](#-adapting-for-your-school)
+- [Troubleshooting](#-troubleshooting)
+- [Team](#-team)
+- [License](#-license)
 
 ---
 
-# 🧠 Overview
+## 🧠 About
 
-Brown Hat is an open-source humanoid robot platform powered by Raspberry Pi 4.
+Brownhat is a student-built, open-source humanoid AI robot designed for Sukuna Secondary School in Nepal. It answers questions about the school, looks up teacher contact details, fetches live news, and holds general-knowledge conversations — all through natural voice interaction in **Nepali, Hindi, and English**.
 
-The project combines artificial intelligence, speech recognition, speech synthesis, and servo-driven facial animation into a single robotic system capable of natural human interaction.
+Built from scratch by a 16-year-old student as an affordable alternative to commercial educational robots, Brownhat runs on a Raspberry Pi 4 and falls back to **fully offline AI** when internet is unavailable.
 
-Brown Hat listens for a wake word, understands spoken language, generates responses using online or offline language models, speaks naturally, and expresses itself through synchronized facial movements.
-
-The goal is simple:
-
-> Build a fully reproducible AI robot that anyone can assemble, improve, and learn from.
-
-Unlike many robotics kits, Brown Hat was designed from the ground up—including hardware design, electronics integration, software architecture, and mechanical assembly.
+> 📺 *Add a demo video or GIF here — link your YouTube video!*
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-| Feature                       | Description                                      |
-| ----------------------------- | ------------------------------------------------ |
-| 🎤 Wake Word Detection        | Activates only when called                       |
-| 🌍 Multilingual Conversations | Understands and responds in multiple languages   |
-| 🧠 Online AI                  | Fast responses powered by Groq                   |
-| 🔌 Offline AI                 | Local fallback using Ollama                      |
-| 🗣️ Natural Speech Synthesis  | Converts AI responses into speech                |
-| 😐 Facial Expressions         | Real-time servo-driven facial animation          |
-| 👀 Autonomous Eye Blinking    | Natural eye movement behavior                    |
-| 👄 Jaw Synchronization        | Mouth movement synchronized with speech          |
-| 🎭 Expression Engine          | Independent control of eyes, eyebrows, and mouth |
-| 🌐 Internet Search            | Retrieves information from the web               |
-| ⚡ Low-Latency Pipeline        | Fast end-to-end response generation              |
-| 🖨️ Open Source               | Fully reproducible and modifiable                |
+| Feature | Details |
+|---|---|
+| 🗣️ Multilingual voice | Nepali, Hindi, and English — language auto-detected |
+| 🦾 Human-like jaw animation | Jaw follows audio amplitude envelope with physical inertia |
+| 👁️ Auto-blinking eyebrows | Natural random blink every 2.5–3.5 seconds |
+| 🏫 School knowledge base | 145 staff members with names, subjects, and phone numbers |
+| 🤖 AI conversations | Groq / Llama-3.1-8b-instant (online) or Mistral 7B GGUF (offline) |
+| 🔍 Live web search | DuckDuckGo integration for news and general-knowledge queries |
+| 🔇 Fully offline mode | Vosk STT + Piper TTS + Mistral — zero internet required |
+| 🎵 Song playback | Plays MP3s with real-time jaw sync |
+| 📖 Text reader mode | Type any text; robot reads it aloud in Nepali or English |
 
 ---
 
-# 🚀 Why Brown Hat?
+## 🔧 Hardware
 
-Most AI assistants exist only as software.
+### Bill of Materials
 
-Brown Hat brings artificial intelligence into the physical world.
+| Component | Purpose | Est. Cost |
+|---|---|---|
+| Raspberry Pi 4 (2 GB+) | Main compute board | ~$35 |
+| PCA9685 16-channel PWM board | Servo controller over I2C | ~$5 |
+| 3× MG90S servo motors | Jaw, left eyebrow, right eyebrow | ~$10 |
+| USB microphone | Voice input | ~$5 |
+| Mini speaker + 3.5 mm cable | Voice output | ~$5 |
+| Jumper wires | Connections | ~$3 |
 
-The project demonstrates how modern language models can be integrated into a robotic platform capable of:
+> 🖨️ 3D-printable head chassis files are available in the `/cad/` directory of the [Robotic_Head](https://github.com/ayushshah-xo/Robotic_Head) repository.
 
-* Listening
-* Understanding
-* Speaking
-* Expressing emotions
-* Operating online or offline
-* Interacting naturally with humans
+### Wiring — PCA9685 → Raspberry Pi 4
 
-Brown Hat is intended to serve as a learning platform for makers, students, robotics enthusiasts, and AI developers.
-
----
-
-# ⚙️ System Architecture
-
-```text
-User Speaks
-      │
-      ▼
-Wake Word Detection
-      │
-      ▼
-Speech Recognition
-      │
-      ▼
-Language Detection
-      │
-      ▼
-AI Processing Layer
- ├── Groq (Online)
- └── Ollama (Offline)
-      │
-      ▼
-Response Generation
-      │
-      ▼
-Text-To-Speech
-      │
-      ▼
-Audio Playback
-      │
-      ├────────────► Jaw Movement
-      ├────────────► Eye Blinking
-      └────────────► Facial Expressions
+```
+PCA9685 VCC  →  Pi 5V   (Pin 2)
+PCA9685 GND  →  Pi GND  (Pin 6)
+PCA9685 SDA  →  Pi SDA  (Pin 3 / GPIO 2)
+PCA9685 SCL  →  Pi SCL  (Pin 5 / GPIO 3)
 ```
 
-The facial animation system runs independently from the conversational pipeline, ensuring smooth and responsive expressions while audio is being played.
+### Servo Channel Map
+
+| Servo | PCA9685 Channel | Neutral Angle |
+|---|---|---|
+| Jaw | 0 | 65° (closed) |
+| Left eyebrow | 4 | 35° (down) |
+| Right eyebrow | 5 | 120° (down, mirrored) |
 
 ---
 
-# 🔧 Hardware
+## 🗂️ Software Architecture
 
-| Component            | Purpose                 |
-| -------------------- | ----------------------- |
-| Raspberry Pi 4       | Main compute unit       |
-| PCA9685 Servo Driver | PWM servo control       |
-| Servo Motors         | Facial actuation        |
-| USB Microphone       | Voice input             |
-| Speaker              | Voice output            |
-| Audio Amplifier      | Audio amplification     |
-| 5V Power Supply      | Stable power delivery   |
-| 3D Printed Structure | Robot frame and housing |
-
----
-
-# 📁 Repository Structure
-
-```text
+```
 Brown-Hat/
+├── robot.py                  ← Entry point — starts the full voice loop
+├── read.py                   ← Text reader mode (type text → robot speaks it)
+├── config.py                 ← All settings in one file (pins, language, AI, audio)
 │
-├── brain/          # AI logic
-├── knowledge/      # Knowledge and configuration
-├── motion/         # Servo control and expressions
-├── songs/          # Song playback modules
-├── tests/          # Testing scripts
-├── voice/          # Speech recognition and TTS
+├── brain/
+│   ├── school_brain.py       ← Teacher lookup + school information
+│   ├── intent_parser.py      ← Servo command detection (Nepali / Hindi / English)
+│   ├── llm.py                ← AI engine (Groq / OpenAI / offline Mistral)
+│   └── web_search.py         ← DuckDuckGo search for news and general queries
 │
-├── robot.py        # Main entry point
-├── config.py       # Configuration
-├── read.py         # Utility scripts
-├── requirements.txt
-└── .gitignore
+├── voice/
+│   ├── stt.py                ← Microphone → text (Deepgram cloud or Vosk offline)
+│   ├── tts.py                ← Text → speech (gTTS / ElevenLabs / Piper)
+│   └── song_player.py        ← MP3 playback with jaw sync
+│
+├── motion/
+│   ├── servos.py             ← Jaw + eyebrow servo controller
+│   └── jaw_animator.py       ← Human-like jaw motion (envelope following + inertia)
+│
+├── knowledge/
+│   ├── teachers.json         ← 145 staff members from Sukuna Secondary School
+│   └── developer.txt         ← Robot self-introduction answers
+│
+├── tests/
+│   ├── calibrate.py          ← Interactive servo calibration tool
+│   └── test_servos.py        ← Test servos without running the full robot
+│
+└── songs/                    ← MP3 files played by the robot
+    ├── nepali_song.mp3
+    └── school_song.mp3
 ```
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Quick Start
 
-## 1. Clone the Repository
+### Prerequisites
+
+- Raspberry Pi 4 running Raspberry Pi OS (Bookworm or Bullseye)
+- Python 3.9+
+- PCA9685 board wired and I2C enabled (see [Wiring](#wiring--pca9685--raspberry-pi-4))
+
+### Step 1 — Enable I2C
+
+```bash
+sudo raspi-config
+# Navigate to: Interface Options → I2C → Enable
+sudo reboot
+```
+
+Verify the PCA9685 is detected at address `0x40`:
+
+```bash
+sudo apt install i2c-tools -y
+i2cdetect -y 1
+# You should see "40" in the output grid
+```
+
+### Step 2 — Clone the Repository
 
 ```bash
 git clone https://github.com/ayushshah-xo/Brown-Hat.git
-
 cd Brown-Hat
 ```
 
----
-
-## 2. Install Python Dependencies
+### Step 3 — Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt --break-system-packages
+sudo apt install espeak-ng ffmpeg -y
 ```
 
----
+### Step 4 — Set Up API Keys
 
-## 3. Install System Packages
+Create your `.env` file from the template:
 
 ```bash
-sudo apt update
-
-sudo apt install espeak python3-pyaudio portaudio19-dev alsa-utils
+cp .env.example .env
+nano .env
 ```
 
----
+Fill in your keys — all free tiers are available:
 
-## 4. Optional Offline AI Setup
-
-```bash
-curl -fsSL https://ollama.com/install.sh | sh
-
-ollama pull tinyllama
+```env
+GROQ_API_KEY=your_key_here         # https://console.groq.com       (free)
+DEEPGRAM_API_KEY=your_key_here     # https://deepgram.com           (free tier)
+ELEVENLABS_API_KEY=your_key_here   # https://elevenlabs.io          (optional)
 ```
 
-Brown Hat automatically switches between online and offline AI modes depending on connectivity.
+> **Note:** The robot runs without ElevenLabs — it falls back to gTTS automatically.  
+> The robot also runs without internet — see [fully offline mode](#configuration).
 
----
+### Step 5 — Calibrate Servos
 
-## 5. Configure
-
-Open:
+Open `config.py` and adjust angles to match your physical build:
 
 ```python
-config.py
+SERVO_LIMITS = {
+    "jaw":        {"closed": 65,  "open": 85},
+    "left_brow":  {"down":   35,  "up":  120},
+    "right_brow": {"down":  120,  "up":   35},  # mirrored from left
+}
 ```
 
-Example:
-
-```python
-GROQ_API_KEY = "YOUR_API_KEY"
-
-WAKE_WORD = "brown hat"
-
-LANGUAGE = "en"
-```
-
----
-
-## 6. Launch Brown Hat
+Run the servo test tool to confirm everything moves correctly:
 
 ```bash
-python3 robot.py
+python tests/test_servos.py
 ```
 
-Say the wake word and begin interacting.
+### Step 6 — Run Brownhat
 
----
-
-# 🖨️ CAD & STL Files
-
-The software repository contains only the source code.
-
-Hardware files are maintained separately.
-
-## CAD Files
-
-```text
-PASTE YOUR CAD REPOSITORY LINK HERE
+```bash
+python robot.py
 ```
 
-## STL Files
+Say the wake word — **"Sukuna"** or **"सुकुना"** — then ask your question.
 
-```text
-PASTE YOUR STL REPOSITORY LINK HERE
+---
+
+## 🎤 Voice Commands
+
+Brownhat understands servo control commands in all three languages. Physical commands are handled in ~50 ms without any API call.
+
+### Servo Commands
+
+| English | Nepali | Hindi | Action |
+|---|---|---|---|
+| "Open eyes" | "आँखा खोल" | "आँखें खोलो" | Raises eyebrows |
+| "Close eyes" | "आँखा बन्द गर" | "आँखें बंद करो" | Lowers eyebrows |
+| "Blink" | "झपकी मार" | "झपकी मारो" | One blink |
+| "Blink twice" | "दुईपटक झपकी" | "दो बार झपकी" | Two blinks |
+| "Open jaw" | "मुख खोल" | "मुँह खोलो" | Opens jaw |
+| "Close jaw" | "मुख बन्द गर" | "मुँह बंद करो" | Closes jaw |
+
+### Knowledge Commands
+
+| Say | Response |
+|---|---|
+| "Anil Thapa ko number ke ho?" | Speaks the teacher's phone number |
+| "Head teacher ko naam ke ho?" | "Hikmat Bahadur Basnet" |
+| "Timilai kasle banayo?" | Introduces its developer |
+| Any news question | DuckDuckGo live search result |
+| Any other question | AI-generated answer (Groq or offline) |
+
+---
+
+## ⚙️ Configuration
+
+All settings live in `config.py`. Key options:
+
+| Setting | Default | Options |
+|---|---|---|
+| `AI_MODE` | `"groq"` | `"groq"`, `"openai"`, `"offline"` |
+| `STT_ENGINE` | `"deepgram"` | `"deepgram"`, `"vosk"` |
+| `TTS_ENGINE` | `"gtts"` | `"gtts"`, `"elevenlabs"`, `"piper"` |
+| `DEFAULT_LANGUAGE` | `"ne"` | `"ne"` (Nepali), `"hi"` (Hindi), `"en"` (English) |
+
+### Fully Offline Mode
+
+No internet? No problem. Set these three values in `config.py`:
+
+```python
+AI_MODE    = "offline"   # Mistral 7B GGUF (download model separately)
+STT_ENGINE = "vosk"      # Vosk local speech recognition
+TTS_ENGINE = "piper"     # Piper neural TTS
 ```
 
-These repositories contain the printable and editable files required to build your own Brown Hat robot.
+Then download the offline models:
+
+```bash
+# Vosk model (Nepali)
+wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
+unzip vosk-model-small-en-us-0.15.zip -d models/vosk/
+
+# Mistral 7B (optional, ~4 GB)
+# Download from: https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF
+# Place at: models/llm/mistral-7b-instruct-v0.2.Q4_K_M.gguf
+```
 
 ---
 
-# 📦 Core Technologies
+## 🏫 Adapting for Your School
 
-### Software
+Brownhat is designed to be forked for any school. Three changes are all you need:
 
-* Python
-* Groq API
-* Ollama
-* SpeechRecognition
-* PyAudio
-* Requests
-* eSpeak
-* PCA9685 Servo Control
+**1. Update school info in `config.py`:**
 
-### Hardware
+```python
+SCHOOL = {
+    "name":         "Your School Name",
+    "location":     "Your City, Country",
+    "head_teacher": "Principal Name",
+    "phone":        "+XX XXX-XXXXXXX",
+    "email":        "school@example.com",
+    "robot_name":   "YourRobotName",
+}
 
-* Raspberry Pi 4
-* Servo Motors
-* PCA9685 Driver Board
-* USB Microphone
-* Speaker System
-* 3D Printed Components
+WAKE_WORDS = ["yourrobotname", "hey yourrobotname"]
+```
 
----
+**2. Replace the knowledge base:**
 
-# 🛣️ Roadmap
+Edit `knowledge/teachers.json` with your school's staff list. Each entry follows this structure:
 
-## Current Capabilities
+```json
+{
+  "name": "Teacher Name",
+  "subject": "Mathematics",
+  "phone": "+977 9800000000",
+  "role": "Class Teacher"
+}
+```
 
-* Wake word activation
-* Speech recognition
-* Online AI responses
-* Offline AI fallback
-* Multilingual support
-* Facial expressions
-* Eye blinking
-* Jaw synchronization
-* Internet search
+**3. Set your language:**
 
-## Future Goals
-
-* Long-term memory
-* Camera integration
-* Computer vision
-* Face recognition
-* Emotion recognition
-* Mobile application
-* Additional facial degrees of freedom
-* Expanded personality system
+```python
+DEFAULT_LANGUAGE = "en"   # "ne", "hi", or "en"
+```
 
 ---
 
-# 🤝 Contributing
+## 🛠️ Troubleshooting
 
-Contributions are welcome.
-
-Whether you're interested in:
-
-* Robotics
-* Artificial Intelligence
-* Embedded Systems
-* Mechanical Design
-* 3D Printing
-* Raspberry Pi Development
-
-there is room to contribute.
-
-### Contribution Process
-
-1. Fork the repository
-2. Create a new branch
-3. Implement your changes
-4. Commit your work
-5. Open a pull request
-
-All contributions are appreciated.
+| Error | Fix |
+|---|---|
+| `No module named 'adafruit_servokit'` | `pip install adafruit-circuitpython-servokit --break-system-packages` |
+| `PCA9685 not found at 0x40` | Check I2C wiring and re-run `i2cdetect -y 1` |
+| `DEEPGRAM_API_KEY not set` | Add key to `.env`; robot automatically falls back to Vosk |
+| `gTTS error / no internet` | Set `TTS_ENGINE = "piper"` in `config.py` |
+| Servo moves too far or not enough | Adjust `SERVO_LIMITS` in `config.py`; run `python tests/calibrate.py` |
+| Jaw doesn't move while speaking | Confirm `SERVO_CHANNELS["jaw"] = 0` matches your physical channel |
+| No sound output | Run `aplay -l` to list audio devices; update `output_device` in `AUDIO` config |
+| `OSError: [Errno -9996]` | Wrong audio input device index; try changing `input_device` in `AUDIO` config |
 
 ---
 
-# 👤 Author
+## 👥 Team
 
-## Ayush Shah
+Built with ❤️ at Sukuna Secondary School, Biratnagar, Nepal.
 
-Student • Robotics Builder • Open-Source Developer
+| Name | Role |
+|---|---|
+| **Ayush Shah** | Lead developer — hardware, software, and AI integration |
+| **Yuganshu Rizal** | Team member |
+| **Suprim Ojha** | Team member |
 
-### GitHub
+> Ayush Shah built this project at age 16 while studying in Class 11.
 
-https://github.com/ayushshah-xo
+---
 
-### Project Repository
+## 📄 License
 
-https://github.com/ayushshah-xo/Robotic_Head.git
+[MIT](LICENSE) — Free to use, modify, and distribute.
 
-### Demo Video
-
-https://youtu.be/T0bWZ5AiFkI
+If you build something with Brownhat, we'd love to hear about it!  
+Please credit **Sukuna Secondary School, Nepal** when sharing. 🙏
 
 ---
 
 <div align="center">
 
-### ⭐ If Brown Hat inspired you, consider starring the repository.
-
-Building open-source robotics, one servo at a time.
+Made with ❤️ in Nepal 🇳🇵 · Sukuna Secondary School, Biratnagar
 
 </div>
