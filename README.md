@@ -378,8 +378,3 @@ Please credit **Sukuna Secondary School, Nepal** when sharing. 🙏
 
 ---
 
-<div align="center">
-
-Made with ❤️ in Nepal 🇳🇵 · Sukuna Secondary School, Biratnagar
-
-</div>
