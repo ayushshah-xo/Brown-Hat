@@ -47,11 +47,11 @@ Built from scratch by a 16-year-old student as an affordable alternative to comm
 <div align="center">
 <br/>
 
-<a href="https://youtu.be/T0bWZ5AiFkI?si=LsZRdmURt1ZFJonD">
-  <img src="https://img.youtube.com/vi/T0bWZ5AiFkI/maxresdefault.jpg"
-       alt="▶ Watch Brown Hat Full Demo on YouTube"
-       width="800"/>
-</a>
+<p align="center">
+  <a href="https://youtu.be/T0bWZ5AiFkI">
+    <img src="assets/images/thumbnail.jpg" alt="Brown Hat Demo" width="900">
+  </a>
+</p>
 
 <br/><br/>
 
