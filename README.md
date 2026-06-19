@@ -40,7 +40,27 @@ Brownhat is a student-built, open-source humanoid AI robot designed for Sukuna S
 
 Built from scratch by a 16-year-old student as an affordable alternative to commercial educational robots, Brownhat runs on a Raspberry Pi 4 and falls back to **fully offline AI** when internet is unavailable.
 
-> [![Watch Brownhat in action](https://img.youtube.com/vi/T0bWZ5AiFkI/maxresdefault.jpg)](https://youtu.be/...)
+---
+
+## 🎥 Watch Brown Hat in Action
+
+<div align="center">
+<br/>
+
+<a href="https://youtu.be/T0bWZ5AiFkI?si=LsZRdmURt1ZFJonD">
+  <img src="https://img.youtube.com/vi/T0bWZ5AiFkI/maxresdefault.jpg"
+       alt="▶ Watch Brown Hat Full Demo on YouTube"
+       width="800"/>
+</a>
+
+<br/><br/>
+
+<a href="https://youtu.be/T0bWZ5AiFkI?si=LsZRdmURt1ZFJonD">
+  <img src="https://img.shields.io/badge/▶%20Watch%20Full%20Demo%20on%20YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube"/>
+</a>
+
+<br/><br/>
+</div>
 
 ---
 
@@ -358,3 +378,8 @@ Please credit **Sukuna Secondary School, Nepal** when sharing. 🙏
 
 ---
 
+<div align="center">
+
+Made with ❤️ in Nepal 🇳🇵 · Sukuna Secondary School, Biratnagar
+
+</div>
